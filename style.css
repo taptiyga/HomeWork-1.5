@@ -7,39 +7,31 @@ html,
 body {
     font-family: sans-serif;
     letter-spacing: 1px;
-    background-color: #9e9e9e;
-}
-
-h1 {
-    text-align: center;
-    font-size: 25px;
-    margin-bottom: 32px;
-    padding-top: 32px;
+    background-color: #1b1b1b;
+    line-height: 1.5;
+    color: #c9c9c9;
 }
 
 .container {
     max-width: 1250px;
-    padding: 15px;
+    padding: 32px 15px;
     margin: 0 auto;
 }
 
-ul {
-    margin: 32px 0;
-}
-
-li {
-    margin: 10px 0;
-}
 
 p {
-    margin: 25px;
     font-weight: bold;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px #333;
+    margin-bottom: 32px;
 }
 
 .func {
     padding: 32px;
     border-radius: 10px;
-    box-shadow: 0 4px 16px #ccc;
+    box-shadow: 0 4px 16px #333;
     display: inline-block;
-    margin: 32px;
+    margin-bottom: 32px;
+    margin-right: 32px;
 }
