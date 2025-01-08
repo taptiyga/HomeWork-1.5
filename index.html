@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="func">
+
+            function scopeTest() {</br>
+            &nbsp&nbsp&nbspif (true) {</br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbspvar testVar = 'var variable';</br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsplet blockVar = 'let variable';</br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbspconst blockConst = 'const variable';</br>
+            &nbsp&nbsp&nbsp}</br>
+
+            &nbsp&nbsp&nbspconsole.log(testVar);</br>
+            &nbsp&nbsp&nbspconsole.log(blockVar);</br>
+            &nbsp&nbsp&nbspconsole.log(blockConst);</br>
+            }</br>
+
+            scopeTest();</br>
+        </div>
+
+        <p>Переменные находятся в блоке "if" за его пределами видно только переменную объявленную через "var"</p>
+        <p>Чтобы не было ошибок нужно вывод в консоль для переменных объявленных через let и const поместить в блок "if"
+            или объявить их через "var"
+        </p>
+        <div class="func">
+
+            function scopeTest() {</br>
+            &nbsp&nbsp&nbspif (true) {</br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbspvar testVar = 'var variable';</br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsplet blockVar = 'let variable';</br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbspconst blockConst = 'const variable';</br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbspconsole.log(blockVar);</br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbspconsole.log(blockConst);</br>
+            &nbsp&nbsp&nbsp}</br>
+
+            &nbsp&nbsp&nbspconsole.log(testVar);</br>
+            }</br>
+
+            scopeTest();</br>
+        </div>
+        <div class="func">
+
+            function scopeTest() {</br>
+            &nbsp&nbsp&nbspif (true) {</br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbspvar testVar = 'var variable';</br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbspvar blockVar = 'let variable';</br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbspvar blockConst = 'const variable';</br>
+            &nbsp&nbsp&nbsp}</br>
+
+            &nbsp&nbsp&nbspconsole.log(testVar);</br>
+            &nbsp&nbsp&nbspconsole.log(blockVar);</br>
+            &nbsp&nbsp&nbspconsole.log(blockConst);</br>
+            }</br>
+
+            scopeTest();</br>
+        </div>
+    </div>
+</body>
+
+</html>
